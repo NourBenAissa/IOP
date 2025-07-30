@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --iop-blue: #1E2A55;
+  --iop-green: #76C043;
+  --text-dark: #333;
+  --text-light: #f8f9fa;
+  --bg-light: #ffffff;
+  --bg-grey: #f9fafe;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--iop-blue);
+  font-weight: 600;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}

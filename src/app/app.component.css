@@ -1,0 +1,8 @@
+main {
+  /* 
+    Adds space at the top of the main content area.
+    This prevents the fixed navbar from overlapping the top of your page content.
+    The value should be slightly larger than the height of your navbar.
+  */
+  padding-top: 82px; 
+}

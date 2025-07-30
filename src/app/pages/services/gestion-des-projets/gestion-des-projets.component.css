@@ -1,0 +1,79 @@
+/* --- Final Page Hero Style --- */
+.page-hero {
+    background-color: #F7FAF6; /* Soft, elegant, green-tinted off-white */
+    padding:4px 0;
+    text-align: center;
+}
+.page-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--iop-blue);
+}
+.page-subtitle {
+    font-size: 1.1rem;
+    color: #556270;
+    max-width: 700px;
+    margin: 1rem auto 0 auto;
+}
+.section-tag {
+    display: inline-block;
+    background-color: #eaf6e9; 
+    color: var(--iop-green);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Main Content Section --- */
+.content-title {
+    color: var(--iop-blue); font-weight: 700; margin-bottom: 1rem;
+}
+
+/* --- Style 1: Feature List --- */
+.feature-list { margin-top: 2rem; }
+.feature-item { display: flex; align-items: flex-start; margin-bottom: 1rem; font-size: 1.05rem; color: #556270; }
+.feature-item i { color: var(--iop-green); font-size: 1.2rem; margin-right: 12px; margin-top: 3px; }
+
+/* --- Style 2: Feature Cards --- */
+.feature-card { background-color: #fff; padding: 20px; border-radius: 12px; display: flex; align-items: center; height: 100%; border: 1px solid #e9ecef; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); }
+.feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); border-left: 4px solid var(--iop-green); }
+.feature-card i { font-size: 1.5rem; color: var(--iop-green); margin-right: 15px; }
+.feature-card span { font-weight: 500; color: #556270; }
+
+/* --- Image Composition --- */
+.composition-wrapper { position: relative; width: 90%; margin: 0 auto; }
+.decorative-frame { position: absolute; top: -30px; left: -30px; width: 115%; height: 115%; z-index: 1; }
+.image-holder { position: relative; width: 100%; border-radius: 24px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); z-index: 2; }
+.image-holder img { display: block; width: 100%; }
+.floating-ui-card { position: absolute; bottom: 5%; transform: translateX(-40%); background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 16px; padding: 1rem 1.5rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); display: flex; align-items: center; z-index: 3; color: var(--iop-blue); }
+.floating-ui-card .icon-bubble { flex-shrink: 0; width: 48px; height: 48px; background-color: var(--iop-blue); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+.floating-ui-card strong { display: block; font-weight: 600; font-size: 1rem; }
+.floating-ui-card small { font-size: 0.85rem; opacity: 0.7; }
+.col-lg-6:has(> .composition-wrapper[data-aos=fade-left]) .floating-ui-card { left: 0; transform: translateX(-40%); }
+.col-lg-6:has(> .composition-wrapper[data-aos=fade-right]) .floating-ui-card { right: 0; left: auto; transform: translateX(40%); }
+
+/* --- Call to Action Section --- */
+.cta-v2-section { padding-bottom: 80px; }
+.cta-inner-box { position: relative; z-index: 2; margin-top: -80px; padding: 3rem; border-radius: 24px; background: linear-gradient(90deg, #2A3A6A 0%, var(--iop-blue) 100%); box-shadow: 0 20px 50px rgba(30, 42, 85, 0.25); color: #fff; }
+.cta-title { color: #fff; font-size: 2.2rem; font-weight: 700; }
+.cta-subtitle { color: rgba(255, 255, 255, 0.8); margin: 0.5rem 0 0 0; }
+.btn-contact-cta { background-color: var(--iop-green); color: #fff; border-radius: 50px; padding: 0.8rem 2.2rem; font-weight: 600; transition: all 0.3s ease; border: 2px solid var(--iop-green); text-decoration: none; box-shadow: 0 5px 15px rgba(118, 192, 67, 0.3); }
+.btn-contact-cta:hover { background-color: #fff; color: var(--iop-green); border-color: #fff; transform: translateY(-3px); box-shadow: none; }
+
+/* --- Responsive --- */
+@media (max-width: 991.98px) {
+  .composition-wrapper { margin-top: 3rem; width: 100%; }
+  .cta-inner-box { text-align: center; padding: 2.5rem; }
+  .row.align-items-center.gy-5 { flex-direction: column-reverse; }
+}
+@media (max-width: 576px) {
+  .page-title { font-size: 2.2rem; }
+  .composition-wrapper { width: 95%; }
+  .floating-ui-card { bottom: -20px; left: 50%; transform: translateX(-50%); width: 80%; }
+  .cta-title { font-size: 1.8rem; }
+}

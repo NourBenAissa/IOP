@@ -1,0 +1,72 @@
+/* --- Shared Styles --- */
+.page-hero { background-color: #F7FAF6; padding: 4px 0; text-align: center; }
+.page-title { font-size: 3.5rem; font-weight: 700; color: var(--iop-blue); }
+.page-subtitle { font-size: 1.1rem; color: #556270; max-width: 700px; margin: 1rem auto 0 auto; }
+.section-tag { display: inline-block; background-color: rgba(118, 192, 67, 0.1); color: var(--iop-green); padding: 8px 16px; border-radius: 50px; font-weight: 600; font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+
+/* --- Comparison Columns --- */
+.comparison-column {
+    background-color: #fff; border-radius: 16px; border: 1px solid #e9ecef; overflow: hidden; height: 100%; box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+.column-header { padding: 1.5rem; text-align: center; }
+.column-header h3 { margin: 0; color: #fff; font-size: 1.2rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.header-iop { background-color: var(--iop-blue); }
+.header-client { background-color: var(--iop-green); }
+
+.feature-block { padding: 1.5rem 2rem; border-bottom: 1px solid #e9ecef; }
+.feature-block:last-child { border-bottom: none; }
+.feature-block h5 { font-size: 1.1rem; color: var(--iop-blue); font-weight: 600; margin-bottom: 0.5rem; }
+.feature-block p { margin: 0; color: #556270; line-height: 1.7; }
+
+/* --- Shared Responsibilities Card --- */
+.shared-card {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+.header-shared {
+    background-color: var(--iop-blue); /* Solid blue header */
+}
+.header-shared h3 {
+    text-transform: none;
+    font-size: 1.5rem;
+}
+
+.shared-content {
+    padding: 1rem 2rem;
+}
+.shared-item {
+    padding: 1.5rem 0;
+    border-top: 1px solid #e9ecef;
+}
+.shared-item:first-of-type {
+    border-top: none;
+    padding-top: 0.5rem;
+}
+.shared-item:last-of-type {
+    padding-bottom: 0.5rem;
+}
+.shared-item h5 {
+    font-size: 1.1rem;
+    color: var(--iop-blue);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.shared-item p {
+    margin: 0;
+    color: #556270;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .shared-card {
+        padding: 0;
+    }
+    .shared-content {
+        padding: 1rem 1.5rem;
+    }
+}

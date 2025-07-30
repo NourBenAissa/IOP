@@ -1,0 +1,152 @@
+/*
+================================================
+  1. HERO SECTION STYLES
+================================================
+*/
+.hero-v3-section {
+  background-color: #f9fafe;
+  overflow: hidden;
+  padding: 120px 0; 
+}
+
+/* --- Hero: Left Column --- */
+.hero-text-content {
+  padding-right: 2rem;
+}
+.hero-title {
+  font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--iop-blue);
+}
+.hero-title .highlight-green {
+  color: var(--iop-green);
+}
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #556270;
+  margin-top: 1.5rem;
+  max-width: 500px;
+}
+
+/* --- Hero: Right Column (Image Composition) --- */
+.image-composition-wrapper {
+  position: relative;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.decorative-outline-svg {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;
+}
+.image-holder {
+  position: relative;
+  width: 90%;
+  height: 450px;
+  background-image: url('/assets/images/hero-background.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(30, 42, 85, 0.15);
+  z-index: 2;
+}
+
+/* --- Floating UI Cards --- */
+.floating-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  color: var(--iop-blue);
+  white-space: nowrap;
+}
+@keyframes float-animation {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.floating-card.card-1 {
+  top: 60px; right: 0; font-weight: 500;
+  animation: float-animation 6s infinite ease-in-out;
+}
+.floating-card.card-1 i {
+  margin-left: 1rem; transition: transform 0.3s ease;
+}
+.floating-card.card-1:hover i {
+  transform: translateX(5px);
+}
+.floating-card.card-2 {
+  bottom: 60px; left: 0;
+  animation: float-animation 6s infinite ease-in-out 0.7s;
+}
+.floating-card.card-2 i {
+  font-size: 2rem; color: var(--iop-blue);
+}
+.floating-card.card-2 strong {
+  display: block; font-size: 0.9rem;
+}
+.floating-card.card-2 small {
+  font-size: 0.8rem; opacity: 0.7;
+}
+
+/*
+================================================
+  2. SERVICES SECTION STYLES
+================================================
+*/
+.services-v5-section {
+  position: relative;
+  background-color: #f9fafe;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* --- Aurora Background --- */
+.aurora-backdrop { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.aurora-glow { position: absolute; border-radius: 50%; filter: blur(150px); opacity: 0.8; }
+#glow-green { width: 600px; height: 600px; background: rgba(118, 192, 67, 0.12); top: 10%; left: 15%; }
+#glow-blue { width: 700px; height: 700px; background: rgba(30, 42, 85, 0.08); top: 30%; right: 10%; }
+#glow-light-blue { width: 500px; height: 500px; background: rgba(52, 152, 219, 0.1); bottom: 5%; left: 40%; }
+
+/* --- Section Header & Cards --- */
+.section-title { font-size: 2.8rem; font-weight: 700; color: var(--iop-blue); }
+.section-subtitle { font-size: 1.1rem; color: #556270; max-width: 650px; margin: 1rem auto 0 auto; }
+.service-card-v5 { position: relative; z-index: 1; background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 30px 25px; text-align: center; height: 100%; transition: all 0.3s ease; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); }
+.service-card-v5:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); background: rgba(255, 255, 255, 0.6); border: 1px solid rgba(255, 255, 255, 0.5); }
+.service-card-v5 .icon-wrapper { width: 56px; height: 56px; margin: 0 auto 20px auto; font-size: 1.8rem; box-shadow: 0 0 0 7px var(--glow-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; background-color: var(--service-color); color: #fff; transition: all 0.3s ease; }
+.service-card-v5:hover .icon-wrapper { transform: scale(1.1); }
+.service-card-v5 h3 { font-size: 1.25rem; font-weight: 600; color: var(--iop-blue); margin-bottom: 1rem; }
+.service-card-v5 p { color: #556270; font-size: 0.9rem; line-height: 1.6; }
+
+/*
+================================================
+  3. SHARED & BUTTON STYLES
+================================================
+*/
+.section-tag {
+    display: inline-block; padding: 8px 16px; border-radius: 50px; font-weight: 600; font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem;
+}
+.hero-v3-section .section-tag {
+    background-color: rgba(30, 42, 85, 0.05); color: var(--iop-blue);
+}
+.services-v5-section .section-tag {
+    background-color: rgba(118, 192, 67, 0.1); color: var(--iop-green);
+}
+.btn-contact {
+  background-color: var(--iop-green); color: var(--bg-light); border-radius: 50px; padding: 0.8rem 2.2rem; font-weight: 600; transition: all 0.3s ease; border: 2px solid var(--iop-green); text-decoration: none; letter-spacing: 0.5px; box-shadow: 0 5px 15px rgba(118, 192, 67, 0.4);
+}
+.btn-contact:hover {
+  background-color: var(--iop-blue); border-color: var(--iop-blue); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(30, 42, 85, 0.3);
+}
+
+/* --- Responsive --- */
+@media (max-width: 991.98px) {
+  .hero-text-content { text-align: center; padding-right: 0; margin-bottom: 3rem; }
+}

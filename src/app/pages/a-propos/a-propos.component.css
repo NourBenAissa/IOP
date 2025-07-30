@@ -1,0 +1,75 @@
+/* --- Page Hero (Corrected Style) --- */
+.page-hero {
+    background-color: #F7FAF6; /* THE FIX: A softer, cooler off-white */
+    padding: 4px 0;
+    text-align: center;
+}
+.page-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--iop-blue);
+}
+.page-subtitle {
+    font-size: 1.1rem;
+    color: #556270;
+    max-width: 700px;
+    margin: 1rem auto 0 auto;
+}
+.section-tag {
+    display: inline-block;
+    /* THE FIX: A solid, pastel green background */
+    background-color: #eaf6e9; 
+    color: var(--iop-green);
+    padding: 10px 20px; /* Slightly more padding for the softer look */
+    border-radius: 50px;
+    font-weight: 500; /* Lighter weight to match reference */
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Main Content Section --- */
+.content-title {
+    color: var(--iop-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.image-holder-styled {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(30, 42, 85, 0.15);
+}
+
+/* --- Values Section --- */
+.bg-light { 
+    background-color: #ffffff; /* Make this section pure white for contrast */
+}
+.value-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+.value-card i {
+    font-size: 2.5rem;
+    color: var(--iop-green);
+    margin-bottom: 1rem;
+}
+.value-card h3 {
+    color: var(--iop-blue);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.value-card p {
+    color: #556270;
+    line-height: 1.6;
+}
